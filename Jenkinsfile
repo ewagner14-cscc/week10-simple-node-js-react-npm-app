@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm config rm proxy && npm config rm https-proxy && npm install'
+        sh ' npm install -verbose'
       }
     }
 
